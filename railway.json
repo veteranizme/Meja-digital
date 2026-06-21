@@ -1,0 +1,9 @@
+{
+  "build": {
+    "builder": "NIXPACKS"
+  },
+  "deploy": {
+    "startCommand": "cd dist-standalone && node index.mjs",
+    "restartPolicyType": "ON_FAILURE"
+  }
+}
