@@ -1,0 +1,8 @@
+[phases.setup]
+nixPkgs = ["nodejs_20"]
+
+[phases.build]
+cmds = ["tar -xzf dist-standalone.tar.gz"]
+
+[start]
+cmd = "cd dist-standalone && node index.mjs"
